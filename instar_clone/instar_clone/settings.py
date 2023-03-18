@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent         ##*
 # BASE_DIR = BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -138,3 +138,9 @@ MEDIA_URL = '/media/'       ##항상 /로 끝나도록 설정 할 것
 
 #업로드된 파일을 저장할 디렉토리 경로
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# 커스텀 유저 모델 사용
+AUTH_USER_MODEL = 'user.User'
+
+# 경로 에러 때문에 추가
+# APPEND_SLASH=False
