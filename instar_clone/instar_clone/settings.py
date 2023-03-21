@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent         ##*
 try:
     from .settings_secret import SECRET_KEY
 except ImportError:
-    SECRET_KEY  = 'defautl_secret_key'
+    SECRET_KEY  = 'default_secret_key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
