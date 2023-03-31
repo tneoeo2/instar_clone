@@ -82,26 +82,6 @@ WSGI_APPLICATION = 'instar_clone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': '3.133.145.168',
-        'NAME': 'instar_clone',
-        'USER': 'root',
-        'PASSWORD': 'password',
-        'PORT': '3306',
-        'OPTIONS': {'charset': 'utf8mb4'},
-    }
-}
-"""
 
 DATABASES = {
     'default': {
