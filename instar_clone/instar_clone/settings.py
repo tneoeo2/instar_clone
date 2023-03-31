@@ -106,10 +106,10 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'db-instarclone-instance-1.cknc8jevic1h.us-east-2.rds.amazonaws.com',
+        'HOST': os.environ.get('MYSQL_HOST', 'localhost'),
         'NAME': 'instar_clone',
-        'USER': 'admin',
-        'PASSWORD': 'password',
+        'USER':  os.environ.get('MYSQL_USER_NAME','default_admin'),
+        'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'default_password'),
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
     }
