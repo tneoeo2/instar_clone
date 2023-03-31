@@ -89,7 +89,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-"""
 
 DATABASES = {
     'default': {
@@ -97,6 +96,19 @@ DATABASES = {
         'HOST': '3.133.145.168',
         'NAME': 'instar_clone',
         'USER': 'root',
+        'PASSWORD': 'password',
+        'PORT': '3306',
+        'OPTIONS': {'charset': 'utf8mb4'},
+    }
+}
+"""
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'db-instarclone-instance-1.cknc8jevic1h.us-east-2.rds.amazonaws.com',
+        'NAME': 'instar_clone',
+        'USER': 'admin',
         'PASSWORD': 'password',
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
